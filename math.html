@@ -14,18 +14,34 @@
             text-align: center;
             line-height: 1.6;
         }
-        h1 { font-size: 2.8rem; }
+        h1 { font-size: 2.8rem; margin-bottom: 20px; }
         .content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             text-align: left;
             background: rgba(255,255,255,0.1);
             padding: 30px;
             border-radius: 15px;
         }
-        a {
-            color: white;
-            text-decoration: underline;
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .download-btn:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -33,19 +49,27 @@
     <h1>Mathematics 📐</h1>
     
     <div class="content">
-        <h2>Welcome to the Math Section!</h2>
-        <p>Here you can find formulas, tips, and practice problems.</p>
-        
-        <h3>Common Formulas</h3>
-        <ul>
-            <li>Area of Circle = πr²</li>
-            <li>Pythagorean Theorem = a² + b² = c
-            <li>Quadratic Formula = x = [-b ± √(b²-4ac)] / 2a</li>
-        </ul>
-        
-        <p>More content coming soon...</p>
+        <h2>Math Diagrams & Resources</h2>
+        <p>Here are some useful math images. You can download them!</p>
+
+        <!-- Pythagorean Theorem -->
+        <h3>Pythagorean Theorem</h3>
+        <img src="images/pythagorean.png" alt="Pythagorean Theorem Diagram">
+        <br>
+        <a href="images/pythagorean.png" class="download-btn" download>⬇️ Download Image</a>
+
+        <!-- You can add more images below like this: -->
+        <!--
+        <h3>Another Title</h3>
+        <img src="images/your-second-image.png" alt="Description">
+        <br>
+        <a href="images/your-second-image.png" class="download-btn" download>⬇️ Download Image</a>
+        -->
+
     </div>
 
-    <a href="index.html" class="btn" style="background:white; color:#667eea; padding:12px 25px; border-radius:50px; text-decoration:none;">← Back to Home</a>
+    <p style="margin-top: 40px;">
+        <a href="index.html" style="color:white; font-size: 1.2rem;">← Back to Home</a>
+    </p>
 </body>
 </html>
