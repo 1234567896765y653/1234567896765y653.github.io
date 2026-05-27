@@ -15,16 +15,27 @@
         }
         h1 { font-size: 2.8rem; }
         .content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             background: rgba(255,255,255,0.1);
             padding: 30px;
             border-radius: 15px;
+            text-align: left;
         }
         img {
             max-width: 100%;
             border-radius: 12px;
             margin: 20px 0;
+        }
+        .download-btn {
+            padding: 12px 25px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -32,16 +43,25 @@
     <h1>Mathematics 📐</h1>
     
     <div class="content">
-        <h2>Math Diagrams</h2>
-        
+        <h2>Math Diagrams & Resources</h2>
+
+        <!-- === ADD NEW IMAGES BELOW HERE === -->
+
         <h3>Pythagorean Theorem</h3>
         <img src="images/pythagorean.png" alt="Pythagorean Theorem">
-        <br><br>
-        <a href="images/pythagorean.png" download style="padding:12px 25px; background:white; color:#667eea; border-radius:50px; text-decoration:none; font-weight:bold;">
-            ⬇️ Download Image
-        </a>
+        <br>
+        <a href="images/pythagorean.png" class="download-btn" download>⬇️ Download Image</a>
+
+        <!-- Example of how to add another image -->
+        <!--
+        <h3>Quadratic Formula</h3>
+        <img src="images/quadratic.png" alt="Quadratic Formula">
+        <br>
+        <a href="images/quadratic.png" class="download-btn" download>⬇️ Download Image</a>
+        -->
+
     </div>
 
-    <p><a href="index.html" style="color:white; margin-top:30px; display:inline-block;">← Back to Home</a></p>
+    <p><a href="index.html" style="color:white; font-size:1.2rem;">← Back to Home</a></p>
 </body>
 </html>
