@@ -13,61 +13,64 @@
             color: white;
             text-align: center;
         }
-        h1 { font-size: 2.8rem; }
-        .content {
-            max-width: 900px;
-            margin: 40px auto;
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
+        h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        .subtitle { font-size: 1.4rem; margin-bottom: 50px; }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: rgba(255,255,255,0.15);
+            padding: 30px 20px;
             border-radius: 15px;
-            text-align: left;
+            width: 280px;
+            transition: 0.3s;
         }
-        img {
-            max-width: 100%;
-            border-radius: 12px;
-            margin: 20px 0;
+        .card:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.25);
         }
-        .download-btn {
+        .card h2 { margin: 15px 0; }
+        .btn {
+            display: inline-block;
             padding: 12px 25px;
             background: white;
             color: #667eea;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
     <h1>Mathematics 📐</h1>
-    
-    <div class="content">
-        <h2>Math Diagrams & Resources</h2>
+    <p class="subtitle">Choose a section below</p>
 
-        <!-- === ADD NEW IMAGES BELOW HERE === -->
+    <div class="cards">
+        <div class="card">
+            <h2>🎮 Math Games</h2>
+            <p>Practice with diagrams and activities</p>
+            <a href="math-games.html" class="btn">Go to Games</a>
+        </div>
 
-                <h3>Train Game</h3>
-        <img src="images/train-game-0010.png" alt="A fun math game">
-        <br>
-        <a href="images/train-game-0010.png" class="download-btn" download>⬇️ Download Image</a>
+        <div class="card">
+            <h2>💡 Math Tips</h2>
+            <p>Helpful tricks and study tips</p>
+            <a href="math-tips.html" class="btn">Go to Tips</a>
+        </div>
 
-
-            <h3>Multiplication Connect 4</h3>
-        <img src="images/750f-173796-1.avif" alt="A fun multiplication math game">
-        <br>
-        <a href="images/750f-173796-1.avif" class="download-btn" download>⬇️ Download Image</a>
-
-        <!-- Example of how to add another image -->
-        <!--
-        <h3>Quadratic Formula</h3>
-        <img src="images/quadratic.png" alt="Quadratic Formula">
-        <br>
-        <a href="images/quadratic.png" class="download-btn" download>⬇️ Download Image</a>
-        -->
-
+        <div class="card">
+            <h2>🛠️ Math Tools</h2>
+            <p>Calculators and useful tools</p>
+            <a href="math-tools.html" class="btn">Go to Tools</a>
+        </div>
     </div>
 
-    <p><a href="index.html" style="color:white; font-size:1.2rem;">← Back to Home</a></p>
+    <p style="margin-top: 50px;">
+        <a href="index.html" style="color:white; font-size:1.2rem;">← Back to Home</a>
+    </p>
 </body>
 </html>
